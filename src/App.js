@@ -1,25 +1,36 @@
+// 1. IMPORTACIONES
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header'
+
+
+// 2. FUNCIÓN (COMPONENTE)
+
+// function suma(a,b) {
+  
+//   // ... sentencias, instrucciones par apoder retornar correctamente un resultado
+//   const numA = parseInt(a)
+//   const numB = parseInt(b)
+  
+//   return numA + numB
+// }
+
+// suma(1,2)
+
 
 function App() {
-  return (
+
+  // sentencias, instrucciones, lógica
+  const name = "Mike"
+
+  // VOY A APLICAR UN FORMATO MUY SIMILAR A HANDLEBARS QUE SE LLAMA JSX
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header nombre={name} />
     </div>
   );
 }
 
+// 3. EXPORTACIÓN
+// module.exports = App
 export default App;
